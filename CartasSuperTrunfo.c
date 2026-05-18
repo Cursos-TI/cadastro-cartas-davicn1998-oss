@@ -7,7 +7,7 @@
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
   char codigo_carta[4];      // para guardar indentificação das cartas [A1]
-  int população;               // Numero de habitantes
+  int populacao;               // Numero de habitantes
   float area;                  // Área em km²
   float pib;                   // Produto interno bruto
   int pontos_turisticos;       // quantidade de pontos turisticos
@@ -27,7 +27,7 @@ int main() {
   scanf("%f", &pib);
 
   printf("Digite o numero de pontos turistico: ");
-  scanf("%d", &pontos_turistico);
+  scanf("%d", &pontos_turisticos);
 
   printf("\n-------------------------------------\n");
 
@@ -36,10 +36,10 @@ int main() {
   // Exibe os dados cadastrados de forma clara e organizada, por linha.
   printf("Dados da cidade Cadastrada:\n");
   printf("Código de Carta: %s\n", codigo_carta);
-  printf("População: %d habitantes\n, população");
-  printf("Área: %2f\n, area");
-  printf("PIB: %2f\n", pib);
-  printf("Poontos turísticos: %d\n", pontos_turisticos);
+  printf("Populacao: %d habitantes\n", populacao);
+  printf("Área: %.2f\n", area);
+  printf("PIB: %.2f\n", pib);
+  printf("Pontos turisticos: %d\n", pontos_turisticos);
 
 
 return 0;
