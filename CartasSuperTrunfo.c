@@ -13,7 +13,7 @@ int main() {
   int pontos_turisticos;       // quantidade de pontos turisticos
   
   // Área para entrada de dados
-  printf("== Cadrasto da carta 1 ==\n");
+  printf("== Cadastro da carta 1 ==\n");
   printf("Digite o codigo da carta");
   scanf("%3s", codigo_carta); 
 
