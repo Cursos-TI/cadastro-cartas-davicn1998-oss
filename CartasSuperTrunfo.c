@@ -11,7 +11,9 @@ int main() {
   float area;                  // Área em km²
   float pib;                   // Produto interno bruto
   int pontos_turisticos;       // quantidade de pontos turisticos
-  
+  float densidade_populacional;  // mumeros da massa populacional
+  float pib_per_capita;         // valor real do pib em relação a população
+
   // Área para entrada de dados
   printf("== Cadastro da carta 1 ==\n");
   printf("Digite o codigo da carta");
@@ -29,6 +31,11 @@ int main() {
   printf("Digite o numero de pontos turistico: ");
   scanf("%d", &pontos_turisticos);
 
+  // cálculos automáticos do nível aventureiro
+  densidade_populacional = (float)populacao / area;
+  pib_per_capita = pib / (float)populacao;
+
+
   printf("\n-------------------------------------\n");
 
 
@@ -40,6 +47,12 @@ int main() {
   printf("Área: %.2f\n", area);
   printf("PIB: %.2f\n", pib);
   printf("Pontos turisticos: %d\n", pontos_turisticos);
+
+  // novas propriedades do nível aventureiro
+  printf("Densidade populacional: %.2f\n hab/km²\n", densidade_populacional);
+  printf("PIB: per capita: %2f\n", pib_per_capita);
+
+
 
 
 return 0;
